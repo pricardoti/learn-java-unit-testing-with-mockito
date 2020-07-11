@@ -1,4 +1,4 @@
-package br.com.business;
+package br.com.junit.business;
 
 import br.com.junit.business.exception.DifferentCurrenciesException;
 import br.com.junit.model.Amount;
