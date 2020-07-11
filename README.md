@@ -19,9 +19,11 @@ Aprenda JUnit & Mockito para criar teste unitários e mock´s em Java com 25 Exa
 - **O que é mock?** Mock é criar objetos que simulam o comportamento de objetos reais. Diferentemente dos stubs, as simulações podem ser criadas dinamicamente a partir do código - em tempo de execução.
 
 - **Hamcrest** é a estrutura conhecida usada para testes de unidade no ecossistema Java. Ele é empacotado no JUnit e, simplesmente, usa predicados existentes - chamados classes de correspondência - para fazer comparações (*Asserts/Matchers*).
+- **Mock vs. Spy:** Quando o Mockito cria uma simulação a partir da Classe de um tipo, não de uma instância real. O mock simplesmente cria uma instância da Classe, totalmente instrumentada para rastrear interações com ela. Por outro lado, o Spy quebra uma instância existente . Ele ainda se comportará da mesma maneira que a instância normal - a única diferença é que ele também será instrumentado para rastrear todas as interações com ele.
+- **PowerMock:** "O PowerMock é um dos frameworks de teste unitário mais poderosos disponíveis para o Java. Seu objetivo é transpassar algumas limitações que os frameworks de testes unitários EasyMock e Mockito têm, fornecendo mais recursos para lidar com algumas situações específicas." -
 - **Uso do ```verify```** ele permite adiconar mais comportamentos que vão tornar os testes ainda mais dinamicos, permitindo verificar a quantidade de execução, ou se, algum execução foi realizada com determinada chamada (parâmetros) o ```verify(T mock, VerificationMode mode)``` pode ser uma solução simples para mutios cenários.
-- **JUnit Rules:** Usando ```MockitoJUnit.rule()``` ao invés do ```@RunWith(MockitoJUnitRunner.class)```.
-- **Mock vs. Spy no Mockito:** Quando o Mockito cria uma simulação a partir da Classe de um tipo, não de uma instância real. O mock simplesmente cria uma instância da Classe, totalmente instrumentada para rastrear interações com ela. Por outro lado, o Spy quebra uma instância existente . Ele ainda se comportará da mesma maneira que a instância normal - a única diferença é que ele também será instrumentado para rastrear todas as interações com ele.
+- **JUnit Rules:** Usando ```MockitoJUnit.rule()``` ao invés do ```@RunWith(MockitoJUnitRunner.class)```. 
+Dherik Barison
 
 #### Troubleshooting
 Consulte o nosso Guia de solução de problemas - https://github.com/in28minutes/in28minutes-initiatives/tree/master/The-in28Minutes-TroubleshootingGuide-And-FAQ
